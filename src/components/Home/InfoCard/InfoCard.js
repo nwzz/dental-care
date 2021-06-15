@@ -1,13 +1,14 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './InfoCard.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const InfoCard = ({ info }) => {
     return (
         <div className="col-md-4 text-white info-card">
-            <div className={`info-container justify-content-center d-flex info-${info.background}`}>
-                <div>
-                    <FontAwesomeIcon className="info-icon " icon={info.icon}></FontAwesomeIcon>
+            <div className={`d-flex justify-content-center info-container info-${info.background}`}>
+                <div className="ms-3">
+                    <FontAwesomeIcon className="info-icon" icon={info.icon}></FontAwesomeIcon>
                 </div>
                 <div>
                     <h6>{info.title}</h6>

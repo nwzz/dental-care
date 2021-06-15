@@ -1,36 +1,34 @@
 import React from 'react';
 import InfoCard from '../InfoCard/InfoCard';
-import { faClock, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons'
 
-const infoData =[
+const infosData = [
     {
-        title: 'Opening Hour',
-        description: 'We Open 7 days 24 Hours',
+        title: 'Opening Hours',
+        description: 'We are open 7 days',
         icon: faClock,
-        background:'primary'
+        background: 'primary'
     },
     {
         title: 'Visit Our Location',
-        description: 'Brooklyn, NY 1000345, US',
+        description: 'Brooklyn, NY 10003 USA',
         icon: faMapMarker,
-        background:'dark'
+        background: 'dark'
     },
     {
-        title: 'Contact Us Now',
-        description: '+13456789043',
+        title: 'Call us now',
+        description: '+15697854124',
         icon: faPhone,
-        background:'primary'
+        background: 'primary'
     }
 ]
-
 const BusinessInfo = () => {
-
     return (
         <section className="d-flex justify-content-center">
             <div className="w-75 row">
-            {
-                infoData.map(info => <InfoCard info={info} ></InfoCard>)
-            }
+                {
+                    infosData.map(info => <InfoCard info={info} key={info.title}></InfoCard>)
+                }
             </div>
         </section>
     );
