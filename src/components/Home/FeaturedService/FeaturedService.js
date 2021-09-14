@@ -6,7 +6,7 @@ const FeaturedService = () => {
             <div className="container mb-5">
                 <div className="row mb-5">
                     <div className="col-md-5 mb-4 m-md-0">
-                        <img className="img-fluid" src={featured} alt=""/>
+                        <img className="img-fluid" style={{width:'400px'}} src={featured} alt=""/>
                     </div>
                     <div className="col-md-7 align-self-center">
                         <h1>Exceptional Dental Care, on your Term</h1>
